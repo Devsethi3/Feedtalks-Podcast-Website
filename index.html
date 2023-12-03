@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =================================================================
+                                  META TAGS
+    =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore engaging podcast episodes on various topics with FeedTalks. Join the conversation and stay informed.">
+    <meta name="keywords" content="podcast, feedtalks, episodes, interviews, discussions, topics">
+    <meta property="og:title" content="FeedTalks Podcast">
+    <meta property="og:description" content="Engaging Conversations on Various Topics">
+    <meta property="og:url" content="https://devsethi3.github.io/Feedtalks-Podcast-Website/">
+    <meta name="author" content="Dev Prasad Sethi">
+    <title>FeedTalks Podcast - Engaging Conversations on Various Topics</title>
+    <!-- =================================================================
+                                  FAVICON
+    =================================================================== -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- ================================================================
+                           Link Custom CSS File
+    ==================================================================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ================================================================
+                                Box-Icon CDN
+    ==================================================================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- ================================================================
+                             Font Awesome CDN
+    ==================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- ======================================================== HEADER ======================================================== -->
+    <header class="header" id="header">
+        <nav class="navbar flexitem container">
+            <a href="#">
+                <img src="assets/images/logo.png" alt="" class="nav-logo-img" width="200">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list flexitem">
+                    <i class="fa-solid fa-xmark" class="nav-close" id="nav-close"></i>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#categories" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#feature" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#podcast" class="nav-link">Podcast</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-action flexitem">
+                <i class='bx bx-search' id="search-toggle"></i>
+                <button class="btn" id="register-toggle">Register</button>
+            </div>
+            <i class="fa-solid fa-bars" class="nav-toggle" id="nav-toggle"></i>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- =========================================================== HOME =========================================================== -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content">
+                    <h1 class="home-title">DISCOVER THE <span class="span">PODCAST</span> REVOLUTION</h1>
+                    <p class="home-description">Welcome to the heart of home wisdom! Join us on <span
+                            class="span">FEEDTALKS</span> as we explore the cozy corners of domestic life, unlocking
+                        secrets to make your home the haven you've always dreamed of. </p>
+                    <div class="home-action flexitem">
+                        <button class="btn home-btn">Get Started</button>
+                        <a href="#">Latest Episode</a>
+                        <i class='bx bx-play-circle' id="audio-icon"></i>
+                    </div>
+                    <i class='bx bx-headphone' id="home-headphone-shape"></i>
+                    <div class="home-bottom flexitem">
+                        <img src="assets/images/Home-audio.png" alt="" class="home-audio" width="150">
+                        <img src="assets/images/audio.png" alt="" class="audio" width="200">
+                    </div>
+                    <div class="home-description-bottom">
+                        <p class="bottom-description-text"><i class='bx bx-star'></i>Amidst life's unpredictable dance,
+                            find your rhythm. Embrace the unknown, for within uncertainty, lies the canvas of
+                            possibilities. Each step is challenge, a color. Paint a masterpiece of resilience and
+                            growth..</p>
+                    </div>
+                </div>
+                <img src="assets/images/home-image-1.png" alt="Podcast" class="home-img">
+            </div>
+            <div class="search-page">
+                <i class="fa-solid fa-xmark" class="nav-close" id="search-close"></i>
+                <div class="search-input flexitem">
+                    <input type="text" placeholder="Search Here..." class="input-box">
+                    <button class="btn search-btn">Search</button>
+                </div>
+            </div>
+            <div class="register-page">
+                <div class="register-grid grid">
+                    <div class="back-to-message flexitem" id="register-close">
+                        <i class='bx bx-left-arrow-circle' id="back-icon"></i>
+                        Back to the Website
+                    </div>
+                    <div class="register-content">
+                        <h2 class="section-title"><span class="span">Welcome,</span> Let's Get Started</h2>
+                        <form action="" class="register-form">
+                            <div class="form-input flexitem">
+                                <label for="name" class="label-field">Full Name</label>
+                                <input type="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-input flexitem">
+                                <label for="email" class="label-field">Email</label>
+                                <input type="email" placeholder="yourmail@gmail.com">
+                            </div>
+                            <div class="form-input flexitem">
+                                <label for="Password" class="label-field">Password</label>
+                                <input type="password" placeholder="At least 8">
+                            </div>
+                        </form>
+                        <div class="form-bottom flexitem">
+                            <p class="form-message flexitem">Sign Up with <i class='bx bxl-google' id="google-icon"></i>
+                            </p>
+                            <button class="primary-btn">Sign Up</button>
+                        </div>
+                    </div>
+                    <img src="assets/images/Login-image.gif" alt="" class="register-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================================== ABOUT ========================================================== -->
+        <section class="about section" id="about">
+            <div class="about-container grid container">
+                <img src="assets/images/About-image.png" alt="" class="about-img">
+                <div class="about-content">
+                    <h2 class="section-title section-top">We have been listed in all of the top <span
+                            class="span">podcast</span>
+                        directions.</h2>
+                    <p class="about-description">Proud to share that we've secured listings on all out premier podcast
+                        directories. This achievement underscores our dedication to widespread accessibility. As we
+                        continue to expand our presence, join us on the journey through the leading platforms for an
+                        enriching audio experience.</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= categories ========================================================= -->
+        <section class="categories section" id="categories">
+            <div class="categories-container container">
+                <h2 class="text-center section-title">Explore <span class="span">Podcast</span> Categories</h2>
+                <div class="category-tags">
+                    <div class="tag-grid grid">
+                        <p class="tag-item flexitem">
+                            <i class='bx bx-trending-up'></i>
+                            Self Growth
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bxs-business'></i>
+                            Business
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bx-user-pin'></i>
+                            Relationship
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bx-doughnut-chart'></i>
+                            Design
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bxl-graphql'></i>
+                            Technology
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bxs-bar-chart-alt-2'></i>
+                            Analytics
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bxs-video-recording'></i>
+                            Video Recording
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bx-bolt-circle'></i>
+                            Quick Review
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bx-dollar-circle'></i>
+                            Affordable Price
+                        </p>
+                        <p class="tag-item flexitem">
+                            <i class='bx bxs-leaf'></i>
+                            Trustable Partners
+                        </p>
+                    </div>
+                </div>
+                <div class="categories-image-wrapper">
+                    <div class="categories-image-grid grid">
+                        <div class="categories-grid-item">
+                            <img src="assets/images/Category-grid-1.png" alt="" class="categories-image">
+                        </div>
+                        <div class="categories-grid-item">
+                            <img src="assets/images/Category-grid-2.webp" alt="" class="categories-image">
+                        </div>
+                        <div class="categories-grid-item">
+                            <img src="assets/images/Category-grid-3.webp" alt="" class="categories-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quote container text-center">
+                <h4 class="quote-heading flexitem"> <i class='bx bxs-leaf' id="leaf-icon"></i><span class="span">QUOTE
+                        OF THE DAY</span></h4>
+                <p class="quote-description">"Embark on a captivating journey of intellect and imagination with
+                    FEEDTALKS.
+                    Unveiling untold stories, exploring boundless ideas because every moment is an opportunity for
+                    inspiration and connection."</p>
+            </div>
+        </section>
+
+        <!-- =========================================================== ABOUT ========================================================== -->
+        <section class="about section" id="feature">
+            <div class="feature-container grid container">
+                <img src="assets/images/about-image-2.jpg" alt="" class="about-image-2">
+                <img src="assets/images/feature.png" alt="" class="about-feature-img">
+                <div class="about-content">
+                    <h2 class="section-title">Easy to Creating and Listening to <span class="span">Podcast</span></h2>
+                    <p class="about-description">
+                        Discover the simplicity of podcast creation and listening with user-friendly platforms.
+                        Effortlessly share your voice, ideas, and stories while enjoying a vast array of content. Dive
+                        into the world of podcasts – where creating and listening are seamlessly easy and enjoyable.
+                    </p>
+                    <p class="about-content-bullets flexitem">
+                        <i class='bx bxs-check-circle' id="check-icon"></i>
+                        Plan Your Content: Outline engaging topics for your podcast episodes.
+                    </p>
+                    <p class="about-content-bullets flexitem">
+                        <i class='bx bxs-check-circle' id="check-icon"></i>
+                        Gather Equipment: Acquire simple recording tools for a smooth setup.
+                    </p>
+                    <p class="about-content-bullets flexitem">
+                        <i class='bx bxs-check-circle' id="check-icon"></i>
+                        Edit and Enhance: Polish your audio with user-friendly editing software.
+                    </p>
+                    <p class="about-content-bullets flexitem padding-bottom">
+                        <i class='bx bxs-check-circle' id="check-icon"></i>
+                        Share and Connect: Distribute your podcast and build a loyal audience.
+                    </p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================== PODCAST ========================================================= -->
+        <section class="podcast section" id="podcast">
+            <div class="podcast-container container text-center">
+                <h2 class="section-title section-bottom">Explore The Best <span class="span">Podcast</span></h2>
+                <div class="podcast-wrapper grid">
+                    <div class="podcast-item grid-podcast">
+                        <img src="assets/images/podcast-img-1.jpg" alt="" class="podcast-item-img">
+                        <p class="podcast-item-description">
+                            Unveiling : Your gateway to fascinating narratives, expert insights, and captivating
+                            discussions.
+                        </p>
+                        <div class="podcast-action flexitem">
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-headphone' id="headphone-icon"></i>
+                                <p class="podcast-action-description">20.4k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-time-five' id="time-icon"></i>
+                                <p class="podcast-action-description">1.4h</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bxs-share-alt' id="share-icon"></i>
+                                <p class="podcast-action-description">58.9k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-comment' id="comment-icon"></i>
+                                <p class="podcast-action-description">11.2k</p>
+                            </div>
+                        </div>
+                        <button class="primary-btn"><i class='bx bx-play-circle' id="play-icon"></i> Play</button>
+                    </div>
+                    <div class="podcast-item grid-podcast">
+                        <img src="assets/images/podcast-img-2.jpg" alt="" class="podcast-item-img">
+                        <p class="podcast-item-description">
+                            Elevate your moments with engaging tales, insightful dialogues, and diverse voices.
+                        </p>
+                        <div class="podcast-action flexitem">
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-headphone' id="headphone-icon"></i>
+                                <p class="podcast-action-description">32.8k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-time-five' id="time-icon"></i>
+                                <p class="podcast-action-description">1.2h</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bxs-share-alt' id="share-icon"></i>
+                                <p class="podcast-action-description">72.9k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-comment' id="comment-icon"></i>
+                                <p class="podcast-action-description">19.7k</p>
+                            </div>
+                        </div>
+                        <button class="secondary-btn"><i class='bx bx-play-circle' id="play-icon"></i> Play</button>
+                    </div>
+                    <div class="podcast-item grid-podcast">
+                        <img src="assets/images/podcast-img-3.jpg" alt="" class="podcast-item-img">
+                        <p class="podcast-item-description">
+                            Embark on a sonic odyssey with intriguing stories, thought-provoking discussions, and
+                            experiences.
+                        </p>
+                        <div class="podcast-action flexitem">
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-headphone' id="headphone-icon"></i>
+                                <p class="podcast-action-description">18.4k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-time-five' id="time-icon"></i>
+                                <p class="podcast-action-description">1.1h</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bxs-share-alt' id="share-icon"></i>
+                                <p class="podcast-action-description">29.4k</p>
+                            </div>
+                            <div class="podcast-action-item flexitem">
+                                <i class='bx bx-comment' id="comment-icon"></i>
+                                <p class="podcast-action-description">11.9k</p>
+                            </div>
+                        </div>
+                        <button class="secondary-btn"><i class='bx bx-play-circle' id="play-icon"></i> Play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== NEWSLETTER ======================================================== -->
+        <section class="newsletter section" id="newsletter">
+            <div class="newsletter-container container">
+                <div class="newsletter-wrapper grid">
+                    <div class="newsletter-content">
+                        <h2 class="section-title">Keep in touch and stay inspiring everyday.</h2>
+                        <p class="newsletter-description">
+                            Keep in touch and ignite inspiration every day. Let meaningful conversations fuel your
+                            journey, sparking positivity and growth. Stay connected, stay inspired, and make every
+                            moment a source of motivation for yourself and others.
+                        </p>
+                        <div class="newsletter-input-box flexitem">
+                            <input type="text" placeholder="Enter Your Email" class="input-box">
+                            <button class="btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <img src="assets/images/newsletter-img.jpg" alt="" class="newsletter-img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================== FOOTER ======================================================== -->
+    <footer class="footer section">
+        <div class="footer-container container">
+            <div class="footer-grid grid">
+                <div class="footer-grid-item">
+                    <div class="footer-grid-content">
+                        <a href="#" class="footer-logo"><img src="assets/images/logo.png" width="200"></a>
+                        <p class="footer-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="footer-social-icons flexitem">
+                            <i class='bx bxl-facebook' id="social-icon"></i>
+                            <i class='bx bxl-twitter' id="social-icon"></i>
+                            <i class='bx bxl-pinterest-alt' id="social-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-grid-item">
+                    <h3 class="footer-title">Home</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item flexitem">
+                            <a href="#" class="footer-list-link flexitem"><i
+                                    class='bx bx-chevron-right'></i>Approved</a>
+                            <a href="#categories" class="footer-list-link flexitem"><i
+                                    class='bx bx-chevron-right'></i>Categories</a>
+                            <a href="#podcast" class="footer-list-link flexitem"><i class='bx bx-chevron-right'></i>More
+                                Podcasts</a>
+                            <a href="#" class="footer-list-link flexitem"><i class='bx bx-chevron-right'></i>How it
+                                works?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-grid-item">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item flexitem">
+                            <a href="#" class="footer-list-link flexitem"><i class='bx bx-chevron-right'></i>About
+                                Us</a>
+                            <a href="#categories" class="footer-list-link flexitem"><i
+                                    class='bx bx-chevron-right'></i>Reviews</a>
+                            <a href="#podcast" class="footer-list-link flexitem"><i
+                                    class='bx bx-chevron-right'></i>FAQs</a>
+                            <a href="#" class="footer-list-link flexitem"><i class='bx bx-chevron-right'></i>Stories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-grid-item">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item flexitem">
+                            <a href="#" class="footer-list-link flexitem"><i class='bx bxs-phone' id="call-icon"></i>+1
+                                222 333 444</a>
+                            <a href="#categories" class="footer-list-link flexitem"><i class='bx bxs-envelope'
+                                    id="email-icon"></i>feedtalks@gmail</a>
+                            <a href="#podcast" class="footer-list-link flexitem"><i class='bx bxs-map'
+                                    id="location-icon"></i>WZ-123 Patel Nagar, Near Metro Station, New Delhi, India</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copy">
+        <p class="footer-copyright flexitem"><i class='bx bxs-copyright' id="copy-icon"></i> 2023 Made with <i
+                class="fa-solid fa-heart" id="heart-icon"></i> by Dev
+            Sethi.</p>
+    </div>
+
+    <!-- ======================================================== SCROLL UP ======================================================== -->
+    <div class="scroll-up" id="scroll-up">
+        <a href="#home">
+            <i class='bx bx-up-arrow-alt' id="up-icon"></i>
+        </a>
+    </div>
+    <!-- ================================================================
+                        GSAP & SCROLLTRIGGER CDN
+    ==================================================================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+        integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ================================================================
+                           Link Custom JS File
+    ==================================================================-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

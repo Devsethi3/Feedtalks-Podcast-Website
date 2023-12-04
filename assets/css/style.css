@@ -786,9 +786,6 @@ input{
   }
 }
 @media screen and (max-width: 500px) {
-  .navbar{
-    height: 4.5rem;
-  }
   .nav-logo-img {
     width: 180px;
   }
@@ -803,6 +800,16 @@ input{
   }
   .register-page{
     padding-inline: 2rem;
+  }
+  .search-page{
+    padding-inline: 1rem;
+  }
+  .input-box{
+    padding: 11px 20px;
+  }
+  .newsletter-input{
+    padding: 8px 20px;
+    font-size: .9rem;
   }
   .quote-heading{
     font-size: 2rem;
